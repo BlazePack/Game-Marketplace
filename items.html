@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Items - GameBay</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="items.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="top-nav">
+            <div class="logo">GameBay</div>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search for games, items, accounts...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="user-actions">
+                <div class="nav-icon">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge">3</span>
+                </div>
+                <div class="nav-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">2</span>
+                </div>
+                <button class="btn btn-outline">Sign In</button>
+                <button class="btn btn-primary">Register</button>
+            </div>
+        </nav>
+        <nav class="categories-nav">
+            <ul class="categories-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#" class="active">All Items</a></li>
+                <li><a href="#">Game Accounts</a></li>
+                <li><a href="#">Game Items</a></li>
+                <li><a href="#">Game Currency</a></li>
+                <li><a href="#">Power Leveling</a></li>
+                <li><a href="#">Game Guides</a></li>
+                <li><a href="sell.html">Sell</a></li>
+            </ul>
+            <div class="responsive-tabs">
+                <button class="tab-button active">All</button>
+                <button class="tab-button">Accounts</button>
+                <button class="tab-button">Items</button>
+                <button class="tab-button">Currency</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-banner">
+            <h1>Browse All Items</h1>
+            <p>Find accounts, items, currency, and services for your favorite games</p>
+        </section>
+
+        <section class="filters-container">
+            <h3 class="filters-title">Filter Results</h3>
+            <form class="filters-form">
+                <div class="filter-group">
+                    <label class="filter-label">Game</label>
+                    <select class="filter-control">
+                        <option value="">All Games</option>
+                        <option value="wow">World of Warcraft</option>
+                        <option value="csgo">CS:GO</option>
+                        <option value="lol">League of Legends</option>
+                        <option value="fortnite">Fortnite</option>
+                        <option value="dota2">Dota 2</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="genshin">Genshin Impact</option>
+                        <option value="minecraft">Minecraft</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Category</label>
+                    <select class="filter-control">
+                        <option value="">All Categories</option>
+                        <option value="account">Game Accounts</option>
+                        <option value="item">Game Items</option>
+                        <option value="currency">Game Currency</option>
+                        <option value="service">Power Leveling</option>
+                        <option value="guide">Game Guides</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Price Range</label>
+                    <select class="filter-control">
+                        <option value="">Any Price</option>
+                        <option value="0-50">$0 - $50</option>
+                        <option value="50-100">$50 - $100</option>
+                        <option value="100-200">$100 - $200</option>
+                        <option value="200-500">$200 - $500</option>
+                        <option value="500+">$500+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Sort By</label>
+                    <select class="filter-control">
+                        <option value="featured">Featured</option>
+                        <option value="newest">Newest</option>
+                        <option value="price-asc">Price (Low to High)</option>
+                        <option value="price-desc">Price (High to Low)</option>
+                        <option value="rating">Top Rated</option>
+                    </select>
+                </div>
+                <div class="filter-buttons">
+                    <button type="submit" class="btn btn-primary">Apply Filters</button>
+                    <button type="reset" class="btn btn-outline">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="section-title">12,457 Results</h2>
+            <div class="items-grid">
+                <div class="item-card">
+                    <img src="/api/placeholder/220/160" alt="WoW Account" class="item-image">
+                    <div class="item-info">
+                        <span class="item-type">Account</span>
+                        <h3 class="item-title">Level 70 WoW Warrior with Rare Mounts</h3>
+                        <div class="item-price">$249.99</div>
+                        <div class="item-meta">
+                            <span>World of Warcraft</span>
+                            <span>4.8 ★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="/api/placeholder/220/160" alt="CSGO Knife" class="item-image">
+                    <div class="item-info">
+                        <span class="item-type">Item</span>
+                        <h3 class="item-title">StatTrak™ Karambit | Fade (Factory New)</h3>
+                        <div class="item-price">$1,200.00</div>
+                        <div class="item-meta">
+                            <span>CS:GO</span>
+                            <span>4.9 ★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="/api/placeholder/220/160" alt="LoL Account" class="item-image">
+                    <div class="item-info">
+                        <span class="item-type">Account</span>
+                        <h3 class="item-title">Platinum League of Legends Account with 150+ Skins</h3>
+                        <div class="item-price">$175.50</div>
+                        <div class="item-meta">
+                            <span>League of Legends</span>
+                            <span>4.7 ★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="/api/placeholder/220/160" alt="Fortnite V-Bucks" class="item-image">
+                    <div class="item-info">
+                        <span class="item-type">Currency</span>
+                        <h3 class="item-title">5,000 V-Bucks (Fortnite) - Fast Delivery</h3>
+                        <div class="item-price">$35.99</div>
+                        <div class="item-meta">
+                            <span>Fortnite</span>
+                            <span>4.6 ★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="/api/placeholder/220/160" alt="FFXIV Account" class="item-image">
+                    <div class="item-info">
+                        <span class="item-type">Account</span>
+                        <h3 class="item-title">FFXIV Account - All Jobs Level 90 with Endwalker</h3>
+                        <div class="item-price">$380.00</div>
+                        <div class="item-meta">
+                            <span>Final Fantasy XIV</span>
+                            <span>4.9 ★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="/api/placeholder/220/160" alt="Genshin Impact Account" class="item-image">
+                    <div class="item-info">
+                        <span class="item-type">Account</span>
+                        <h3 class="item-title">AR 60 Genshin Impact with 30+ Characters</h3>
+                        <div class="item-price">$499.99</div>
+                        <div class="item-meta">
+                            <span>Genshin Impact</span>
+                            <span>4.8 ★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="/api/placeholder/220/160" alt="Valorant Account" class="item-image">
+                    <div class="item-info">
+                        <span class="item-type">Account</span>
+                        <h3 class="item-title">Immortal Rank Valorant Account with Premium Skins</h3>
+                        <div class="item-price">$159.00</div>
+                        <div class="item-meta">
+                            <span>Valorant</span>
+                            <span>4.7 ★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="/api/placeholder/220/160" alt="WoW Gold" class="item-image">
+                    <div class="item-info">
+                        <span class="item-type">Currency</span>
+                        <h3 class="item-title">100,000 WoW Gold - Instant Delivery (US Servers)</h3>
+                        <div class="item-price">$45.99</div>
+                        <div class="item-meta">
+                            <span>World of Warcraft</span>
+                            <span>4.9 ★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="/api/placeholder/220/160" alt="Diablo 4 Items" class="item-image">
+                    <div class="item-info">
+                        <span class="item-type">Item</span>
+                        <h3 class="item-title">Diablo 4 Endgame Barbarian Equipment Bundle</h3>
+                        <div class="item-price">$89.99</div>
+                        <div class="item-meta">
+                            <span>Diablo 4</span>
+                            <span>4.8 ★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="/api/placeholder/220/160" alt="Dota 2 Account" class="item-image">
+                    <div class="item-info">
+                        <span class="item-type">Account</span>
+                        <h3 class="item-title">Immortal Dota 2 Account with Rare Arcanas</h3>
+                        <div class="item-price">$299.99</div>
+                        <div class="item-meta">
+                            <span>Dota 2</span>
+                            <span>4.7 ★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="/api/placeholder/220/160" alt="Minecraft Account" class="item-image">
+                    <div class="item-info">
+                        <span class="item-type">Account</span>
+                        <h3 class="item-title">OG Minecraft Account with Rare Username</h3>
+                        <div class="item-price">$125.00</div>
+                        <div class="item-meta">
+                            <span>Minecraft</span>
+                            <span>4.6 ★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="/api/placeholder/220/160" alt="Apex Legends Account" class="item-image">
+                    <div class="item-info">
+                        <span class="item-type">Account</span>
+                        <h3 class="item-title">Predator Apex Legends Account with All Heirlooms</h3>
+                        <div class="item-price">$279.99</div>
+                        <div class="item-meta">
+                            <span>Apex Legends</span>
+                            <span>4.8 ★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button class="btn btn-outline" style="padding: 10px 20px;">Load More</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Game Accounts</a></li>
+                    <li><a href="#">Game Items</a></li>
+                    <li><a href="#">Game Currency</a></li>
+                    <li><a href="#">Power Leveling</a></li>
+                    <li><a href="#">Game Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Safety Center</a></li>
+                    <li><a href="#">Seller Protection</a></li>
+                    <li><a href="#">Buyer Protection</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GameBay. All rights reserved. Terms of Service | Privacy Policy</p>
+        </div>
+    </footer>
+</body>
+</html>
